@@ -5,8 +5,7 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-# When deploy to heroku, need blank this?
-gem 'sqlite3'
+
 
 group :production do
 # gems specifically for Heroku go here
@@ -16,6 +15,8 @@ end
 
 group :development do
   gem 'rspec-rails', '2.6.1'
+  # When deploy to heroku, need blank this?
+  gem 'sqlite3'
 end
 
 group :test do
